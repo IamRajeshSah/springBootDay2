@@ -63,7 +63,7 @@ public class EmployeeRestController3 {
 		
 		employeeEntity.setEmployeeId(employeeId);
 		employeeService.updateEmp(employeeEntity);   
-		return new ResponseEntity<String>("Employee updated successfully!", HttpStatus.CREATED);
+		return new ResponseEntity<String>("Employee updated successfully!", HttpStatus.OK);
 		}
 	
 	@DeleteMapping("/employees/{employeeId}")
